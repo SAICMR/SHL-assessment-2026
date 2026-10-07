@@ -1,1 +1,34 @@
-
+{
+  "project": "SHL Grammar Scoring Engine",
+  "version": "Version 1",
+  "dataset": {
+    "training_samples": 769,
+    "test_samples": 216,
+    "audio_features": 52,
+    "sample_rate_hz": 16000,
+    "audio_format": "WAV",
+    "channels": 1
+  },
+  "models": {
+    "model_1": "Randomized Tree Ensemble",
+    "model_2": "Bagged CART Regression",
+    "ensemble": "Weighted ensemble of Randomized Tree Ensemble and Bagged CART"
+  },
+  "validation": {
+    "cross_validation": "5-fold",
+    "oof_rmse": 0.7976,
+    "oof_pearson_correlation": 0.7673
+  },
+  "kaggle_submission": {
+    "version": "Version 1",
+    "status": "Complete",
+    "public_score": 0.7570
+  },
+  "test_predictions": {
+    "count": 216,
+    "minimum": 2.0287,
+    "maximum": 4.5195,
+    "mean": 3.2119,
+    "standard_deviation": 0.4702
+  }
+}
